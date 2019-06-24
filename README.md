@@ -1,6 +1,7 @@
 # uart_listener
 UartListener class
 
+```
 class UartListener(Thread):
     def __init__(self, device):
         self.data = None
@@ -28,3 +29,4 @@ class UartListener(Thread):
     sleep(2)
     logger.info("UART: OUTPUT: {0}".format(uart.data))
     uart.kill = 1
+```
